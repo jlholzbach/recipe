@@ -1,0 +1,16 @@
+<h1>Welcome Back</h1>
+
+<form (ngSubmit)="onSignIn(f)" #f="ngForm">
+  <div class="field-wrap">
+      <label for="email" class='test'>Email Address:</label>
+      <input activeField id="email" name="email" type="email" class="form-control" ngModel required autocomplete="off"/>
+  </div>
+  <div class="field-wrap">
+      <label for="password">Password:</label>
+      <input activeField minlength="6" id="email" name="password" type="password" class="form-control" ngModel required autocomplete="off"/>
+  </div>
+
+  <h3 *ngIf="displayError" style='color: white; white-space: nowrap; text-align: center;'>No account found!</h3>
+
+  <button [disabled]="!f.valid" style='margin-left: auto; margin-right: auto; display: block!important' type="submit" class="btn">Log In</button>
+</form>

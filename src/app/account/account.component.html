@@ -1,0 +1,29 @@
+<div class="container">
+  <div class="row">
+    <div class="col col-md-6  col-md-offset-3">
+      <div class="panel panel-login">
+        <div class="panel-heading">
+          <ul class="tab-group">
+              <li [routerLink]="['/account/login']" routerLinkActive="active" class="tab">
+                <a>Login</a>
+              </li>
+              <li [routerLink]="['/account/register']" routerLinkActive="active" class="tab">
+                <a>Register</a>
+              </li>
+          </ul>
+          <!--<div class="row">
+              <a class='btn btn-default' [routerLink]="['/account/login']" routerLinkActive="btn-info white">Login</a>
+              <a class='btn btn-default' [routerLink]="['/account/register']" routerLinkActive="btn-info white">Register</a>
+          </div>-->
+          <!--<hr>-->
+        </div>
+        <div class="panel-body">
+          <div class="row">
+            <div class="col-lg-12">
+              <router-outlet></router-outlet>
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
