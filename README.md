@@ -1,27 +1,8 @@
 # RecipeBook
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.1.5.
+This is a project that began as the main project from an online course on Udemy for learning Angular. The course when I began was using an older version of Angular so I am currently exploring updating it to a newer version and also taking this opportunity to make the more of my own. The main purpose of the project was to allow for the creation of the recipes and adding the ingredients to a shopping list. Strangely this doesn't include the instructions for making a the item from the indgredients, which I am looking at adding. 
 
-## Development server
+Another thing I am considering adding is the ability to have multiple shopping lists and choose which list they want to add ingredients. Also the moment when adding ingredients it's all or nothing deal, and is limited the quantity specified in the recipe users are not allowed to add an amount higher then indicated by the recipe. 
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+A big change I am making is the use of a separate PHP service incorporating MySQL instead of Firebase like used in the course. The old version of the project while incomplete is still available at http://joshuaholzbach.com/recipe-book/recipes. You can access the newer version at http://joshuaholzbach.com/recipe.
 
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
