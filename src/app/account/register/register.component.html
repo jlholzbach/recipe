@@ -1,0 +1,28 @@
+<h1>Register for Free</h1>
+
+<form (ngSubmit)="onSignUp(f)" #f="ngForm">
+  <div class="top-row">
+    <div class="field-wrap" style='float: left;'>
+      <label for="firstName">First Name:</label>
+      <input activeField id="firstName" name="firstName" type="text" class="form-control" ngModel required autocomplete="off" />
+    </div>
+
+    <div class="field-wrap" style='float: right;'>
+      <label for="lastName">Last Name:</label>
+      <input activeField id="lastName" name="lastName" type="text" class="form-control" ngModel required autocomplete="off"/>
+    </div>
+  </div>
+
+  <div class="field-wrap" style='clear: left;'>
+      <label for="email" class='test'>Email Address:</label>
+      <input activeField id="email" name="email" type="email" class="form-control" ngModel required autocomplete="off"/>
+  </div>
+  <div class="field-wrap" style='clear: left;'>
+      <label for="password">Password:</label>
+      <input activeField minlength="6" id="email" name="password" type="password" class="form-control" ngModel required autocomplete="off"/>
+  </div>
+
+  <h3 *ngIf="displayError" style='color: white; white-space: nowrap; text-align: center;'>An account already exists with email address</h3>
+
+  <button [disabled]="!f.valid" style='margin-left: auto; margin-right: auto; display: block!important' type="submit" class="btn">Register</button>
+</form>
